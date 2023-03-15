@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-
+import Constants from "./AppConstant";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { Field, Formik, useFormik } from "formik";
@@ -15,7 +15,7 @@ import { Login } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 
 export default function SignupPage() {
-  let url = "https://spotify-server-pco2.onrender.com/";
+  let url = Constants.url;
   const [UsernameData, setUsernameData] = useState("No User");
   const [isVisible, setIsVisible] = useState(false);
   const [userDataFromDB, setUserDataFromDB] = useState({});

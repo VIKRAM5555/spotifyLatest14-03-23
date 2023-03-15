@@ -1,4 +1,4 @@
-let Constants={
-    url:"https://spotify-server-pco2.onrender.com/"
-}
-export default Constants
+let Constants = {
+  url: "https://spotify-serverfinal.onrender.com/",
+};
+export default Constants;
