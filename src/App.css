@@ -225,7 +225,7 @@ bottom:50%;
 
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #19d238  !important;}
-  .css-1aquho2-MuiTabs-indicator {
+  .MuiTabs-indicator {
    
     background-color: #19d238  !important;}
 
@@ -263,10 +263,10 @@ margin-right: auto;
    border-radius: 25px;
    
   }
-  .css-14icu1e-MuiPaper-root{
+  /* .css-14icu1e-MuiPaper-root{
     background-color: #bdf10d !important;
     border-radius: 40px;
-  }
+  }  */
   .startpageContentButton{
     width:25vw;
     height: 35%;

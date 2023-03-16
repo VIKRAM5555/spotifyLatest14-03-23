@@ -99,9 +99,13 @@ export function FrameVideo() {
             <h2> {t("Click_Image")}</h2>
             <h5> {t("ENJOY_TRENDING_INSTRUMENTAL")}</h5>
           </div>
-          {songInfo.map((item) => (
+          {songInfo?.map((item) => (
             <div>
               <Paper
+                style={{
+                  backgroundColor: "#bdf10d !important",
+                  borderRadius: "40px",
+                }}
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
@@ -114,6 +118,7 @@ export function FrameVideo() {
                   sx={{
                     width: 300,
                     height: 300,
+                    backgroundColor: "yellow",
                   }}
                   key={item.img}
                 >

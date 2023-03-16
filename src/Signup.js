@@ -54,6 +54,7 @@ export default function SignupPage() {
           .then((data) => {
             if (data.success) {
               alert("Succesfully Created");
+              navigate("/mainpage");
             } else {
               alert(data.errors[0]);
               setUserDataFromDB(data.userdata);

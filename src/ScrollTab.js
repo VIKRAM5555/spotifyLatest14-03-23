@@ -18,7 +18,7 @@ export default function ScrollTab() {
     i18n.changeLanguage(val);
   };
   const data = JSON.parse(localStorage.getItem("myData"));
-  console.log("v", data.Token);
+  console.log("v", data?.Token);
   return (
     <Box
       sx={{
@@ -31,10 +31,12 @@ export default function ScrollTab() {
         variant="scrollable"
         scrollButtons="auto"
         aria-label="scrollable auto tabs example"
+        className="MuiTabs-indicator"
       >
         <Tab
           label={<WorkspacePremiumIcon />}
           onClick={() => navigate(`/payment`)}
+          sx={{ color: "green !important" }}
         />
 
         <Tab
@@ -43,6 +45,7 @@ export default function ScrollTab() {
           onClick={() => {
             handleChangeLang("jp");
           }}
+          sx={{ color: "green !important" }}
         />
         <Tab
           label="English"
@@ -50,6 +53,7 @@ export default function ScrollTab() {
           onClick={() => {
             handleChangeLang("en");
           }}
+          sx={{ color: "green !important" }}
         />
         <Tab
           label="PlayList"
@@ -57,12 +61,14 @@ export default function ScrollTab() {
           onClick={() => {
             navigate(`/createplaylist`);
           }}
+          sx={{ color: "green !important" }}
         />
         <Tab
           label={`Upload `}
           onClick={() => navigate(`/admin`)}
-          disabled={data.Token !== "Payment successful!" ? true : false}
+          disabled={data?.Token !== "Payment successful!" ? true : false}
           style={{ fontWeight: "900" }}
+          sx={{ color: "green !important" }}
         />
       </Tabs>
     </Box>
