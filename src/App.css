@@ -227,7 +227,8 @@ bottom:50%;
   color: #19d238  !important;}
   .MuiTabs-indicator {
    
-    background-color: #19d238  !important;}
+    background-color: #19d238  !important;
+  border-radius: 25px;}
 
 .startpage{
 width:80%;
